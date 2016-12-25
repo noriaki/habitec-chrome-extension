@@ -24,14 +24,24 @@ coverage
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+build/
 
 # Dependency directories
-node_modules
-jspm_packages
+node_modules/
+jspm_packages/
+bower_components/
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
+
+# Temp files
+tmp/
+temp/
+
+# Bulk files
+.DS_Store
+Thumbs.db
+*~
