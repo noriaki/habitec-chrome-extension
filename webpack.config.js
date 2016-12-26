@@ -5,11 +5,11 @@ const AsyncAwaitPlugin = require('webpack-async-await');
 module.exports = {
   entry: {
     background: [path.resolve('src', 'js', 'background.js')],
-    "content_script": [path.resolve('src', 'js', 'content_script.js')]
+    content_script: [path.resolve('src', 'js', 'content_script.js')],
   },
   output: {
     path: path.resolve('build', 'js'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   devtool: '#inline-source-map',
   plugins: [new AsyncAwaitPlugin({})],
@@ -26,6 +26,12 @@ module.exports = {
         },
         exclude: /node_modules/,
       },
+    ],
+  },
+  resolve: {
+    modules: [
+      path.resolve('src', 'js'),
+      path.resolve('src'),
     ],
   },
 };
