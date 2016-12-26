@@ -1,0 +1,40 @@
+{
+  "name": "habitec-chrome-extension",
+  "version": "0.0.1",
+  "description": "N",
+  "main": "index.js",
+  "repository": "git@github.com:noriaki/habitec-chrome-extension.git",
+  "author": "Noriaki Uchiyama <uchiyama.noriaki@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --progress --colors --display-error-details"
+  },
+  "resolutions": {
+    "async": "2.1.4",
+    "memory-fs": "0.4.1",
+    "supports-color": "3.1.2",
+    "yargs": "6.5.0",
+    "readable-stream": "2.1.5",
+    "inherits": "2.0.1",
+    "minimist": "1.2.0",
+    "punycode": "1.3.2",
+    "camelcase": "3.0.0",
+    "cliui": "3.2.0",
+    "window-size": "0.2.0",
+    "assert-plus": "1.0.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "webpack": "^2.2.0-rc.0",
+    "webpack-async-await": "^1.1.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread"
+    ]
+  }
+}
