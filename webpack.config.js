@@ -17,9 +17,15 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        use: 'babel-loader',
-        exclude: /node_modules/
-      }
-    ]
-  }
+        loader: 'babel-loader',
+        options: {
+          plugins: [
+            'transform-class-properties',
+            'transform-object-rest-spread',
+          ],
+        },
+        exclude: /node_modules/,
+      },
+    ],
+  },
 };
