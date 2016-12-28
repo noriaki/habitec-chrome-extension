@@ -41,7 +41,6 @@
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-class-properties": "^6.19.0",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "chai": "^3.5.0",
     "cpx": "^1.5.0",
     "del-cli": "^0.2.1",
     "eslint": "^3.12.2",
@@ -50,11 +49,17 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "lodash": "^4.17.3",
-    "mocha": "^3.2.0",
     "redux": "^3.6.0",
     "redux-action-types": "^1.0.1",
     "redux-actions": "^1.2.0",
     "webpack": "^2.2.0-rc.0",
     "webpack-async-await": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
