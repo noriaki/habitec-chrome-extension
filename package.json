@@ -7,6 +7,7 @@
   "author": "Noriaki Uchiyama <uchiyama.noriaki@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "mocha -r spec/helper.js spec/**/*.spec.js",
     "copy": "run-p --yarn copy:*",
     "copy:manifest": "cpx src/manifest.json build",
     "copy:icons": "cpx 'src/**/*.png' build",
@@ -15,6 +16,7 @@
     "prebuild": "yarn run clean",
     "postbuild": "yarn run copy",
     "watch": "run-p --yarn watch:*",
+    "watch:test": "mocha -w -r spec/helper.js spec/**/*.spec.js",
     "watch:copy": "run-p --yarn 'copy:* -- --watch'",
     "watch:build": "webpack --progress --colors --watch"
   },
@@ -39,6 +41,7 @@
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-class-properties": "^6.19.0",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "chai": "^3.5.0",
     "cpx": "^1.5.0",
     "del-cli": "^0.2.1",
     "eslint": "^3.12.2",
@@ -46,6 +49,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
+    "lodash": "^4.17.3",
+    "mocha": "^3.2.0",
     "redux": "^3.6.0",
     "redux-action-types": "^1.0.1",
     "redux-actions": "^1.2.0",
