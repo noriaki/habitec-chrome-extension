@@ -7,18 +7,16 @@ describe('Redux Standard', () => {
   describe('Actions', () => {
     describe('PageIcon', () => {
       it('Show', () => {
-        expect(pageIconShow({ test: 'test' }))
+        expect(pageIconShow())
           .to.deep.equal({
             type: SHOW,
-            meta: { sender: { test: 'test' } },
           });
       });
 
       it('Hide', () => {
-        expect(pageIconHide({ test: 'test' }))
+        expect(pageIconHide())
           .to.deep.equal({
             type: HIDE,
-            meta: { sender: { test: 'test' } },
           });
       });
 
