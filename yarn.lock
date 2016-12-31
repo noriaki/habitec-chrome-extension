@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@noriaki/mocha-webpack@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@noriaki/mocha-webpack/-/mocha-webpack-0.7.1.tgz#ce19768aa895ad85fa47c0ba7845c9446a1aa9c6"
+"@noriaki/mocha-webpack@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@noriaki/mocha-webpack/-/mocha-webpack-0.7.2.tgz#04d1071d7b2c07847a53edd953eeba4440f1d4c1"
   dependencies:
     babel-runtime "^6.18.0"
     glob-parent "^2.0.0"

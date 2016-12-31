@@ -7,7 +7,7 @@
   "author": "Noriaki Uchiyama <uchiyama.noriaki@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha-webpack --webpack-config webpack.test.config.js -G -r spec/helper.js spec/**/*.spec.js",
+    "test": "mocha-webpack --webpack-config webpack.test.config.js -G spec/**/*.spec.js",
     "copy": "run-p --yarn copy:*",
     "copy:manifest": "cpx src/manifest.json build",
     "copy:icons": "cpx 'src/**/*.png' build",
@@ -16,7 +16,7 @@
     "prebuild": "yarn run clean",
     "postbuild": "yarn run copy",
     "watch": "run-p --yarn watch:*",
-    "watch:test": "mocha-webpack --webpack-config webpack.test.config.js -G -w -r spec/helper.js spec/**/*.spec.js",
+    "watch:test": "mocha-webpack --webpack-config webpack.test.config.js -G -w spec/**/*.spec.js",
     "watch:copy": "run-p --yarn 'copy:* -- --watch'",
     "watch:build": "webpack --progress --colors --watch"
   },
@@ -56,7 +56,7 @@
     "webpack-async-await": "^1.1.0"
   },
   "devDependencies": {
-    "@noriaki/mocha-webpack": "^0.7.1",
+    "@noriaki/mocha-webpack": "^0.7.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
     "babel-register": "^6.18.0",
