@@ -32,6 +32,10 @@ module.exports = {
     modules: [
       path.resolve('src', 'js'),
       path.resolve('src'),
+      'node_modules',
     ],
+  },
+  performance: {
+    hints: false,
   },
 };
