@@ -1,6 +1,6 @@
 import { createTypes } from 'redux-action-types';
 
-export default createTypes(
+export const { SHOW, HIDE } = createTypes(
   '/page-icon/',
   'SHOW',
   'HIDE',

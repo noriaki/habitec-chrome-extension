@@ -1,5 +1,6 @@
-import { createActions } from 'redux-actions';
+import { createAction } from 'redux-actions';
 
-import * as types from 'Constants/ActionTypes/PageIcon';
+import { SHOW, HIDE } from 'Constants/ActionTypes/PageIcon';
 
-export default createActions(types.SHOW, types.HIDE);
+export const pageIconShow = createAction(SHOW);
+export const pageIconHide = createAction(HIDE);

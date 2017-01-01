@@ -6,10 +6,10 @@ const toggleIcon = (action, sender) => {
 
 chrome.runtime.onMessage.addListener((action, sender) => {
   switch (action.type) {
-  case 'icon/show':
+  case '/page-icon/SHOW':
     toggleIcon('show', sender);
     break;
-  case 'icon/hide':
+  case '/page-icon/HIDE':
     toggleIcon('hide', sender);
     break;
   default:
