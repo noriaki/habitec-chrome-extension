@@ -7,4 +7,5 @@ module.exports = {
   module: config.module,
   resolve: config.resolve,
   performance: config.performance,
+  devtool: 'inline-cheap-module-source-map',
 };
