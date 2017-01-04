@@ -7,7 +7,7 @@
   "author": "Noriaki Uchiyama <uchiyama.noriaki@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha-webpack --webpack-config webpack.test.config.js -G spec/**/*.spec.js",
+    "test": "mocha-webpack --webpack-config webpack.test.config.js \"spec/**/*.spec.js\"",
     "copy": "run-p --yarn copy:*",
     "copy:manifest": "cpx src/manifest.json build",
     "copy:icons": "cpx 'src/**/*.png' build",
@@ -16,7 +16,7 @@
     "prebuild": "yarn run clean",
     "postbuild": "yarn run copy",
     "watch": "run-p --yarn watch:*",
-    "watch:test": "mocha-webpack --webpack-config webpack.test.config.js -G -w spec/**/*.spec.js",
+    "watch:test": "mocha-webpack --watch --webpack-config webpack.test.config.js \"spec/**/*.spec.js\"",
     "watch:copy": "run-p --yarn 'copy:* -- --watch'",
     "watch:build": "webpack --progress --colors --watch"
   },
