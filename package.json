@@ -1,6 +1,6 @@
 {
   "name": "habitec-chrome-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "N",
   "main": "index.js",
   "repository": "git@github.com:noriaki/habitec-chrome-extension.git",
